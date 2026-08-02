@@ -15,6 +15,8 @@ export const ResAPIData = ({ children }) => {
     const data = await fetch(`${VITE_API_BASE_URL}`);
     const res = await data.json();
     setResData(res);
+    // console.log(res, "ress");
+    
   };
 
   return (

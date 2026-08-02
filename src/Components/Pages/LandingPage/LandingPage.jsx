@@ -1,7 +1,6 @@
 import Categories from "./Categories"
 // import Collections from "./Collections"
 import Hero from "./Hero"
-import RestaurantCard from "./RestaurantCard"
 import RestaurantGrid from "./RestaurantGrid"
 import WhyChooseUs from "./WhyChooseUs"
 import AppBanner from "./AppBanner"
@@ -13,7 +12,6 @@ const LandingPage = () => {
         <Hero/>
         {/* <Collections/> */}
         <Categories/>
-        <RestaurantCard/>
         <RestaurantGrid/>
         <WhyChooseUs/>
         <AppBanner/>
