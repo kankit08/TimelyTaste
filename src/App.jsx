@@ -2,7 +2,9 @@ import './App.css'
 
 const App = () => {
   return (
-    <div>Timely Taste</div>
+    <div>
+      <h2>Timely Taste</h2>
+    </div>
   )
 }
 
