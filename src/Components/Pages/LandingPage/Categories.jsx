@@ -21,8 +21,7 @@ const Categories = () => {
 
           <p
             className="mt-4 max-w-xl text-slate-600">
-            Find your favourite cuisine from thousands of restaurants around
-            you.
+            Find your favourite cuisine from thousands of restaurants around you.
           </p>
         </div>
 
