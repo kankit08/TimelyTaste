@@ -8,7 +8,7 @@ import {
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-orange-50 via-white to-white text-slate-900">
+    <section className="relative overflow-hidden bg-gradient-to-b from-orange-50 via-white to-white text-slate-900 mt-10">
       {/* Background Blur */}
       <div className="absolute -top-32 -left-24 w-96 h-96 rounded-full bg-orange-200 opacity-50 blur-[140px]" />
 

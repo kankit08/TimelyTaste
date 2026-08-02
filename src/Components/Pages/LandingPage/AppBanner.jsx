@@ -148,7 +148,7 @@ const AppBanner = () => {
               "
               >
 
-                Download the Savory app and enjoy
+                Download the TimelyTaste app and enjoy
                 faster ordering, exclusive rewards,
                 and personalized recommendations.
 

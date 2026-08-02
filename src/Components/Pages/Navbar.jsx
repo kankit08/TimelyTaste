@@ -20,7 +20,7 @@ const Navbar = () => {
 
             <div>
               <h2 className="text-2xl font-black tracking-tight text-white">
-                Savory
+                TimelyTaste
               </h2>
 
               <p className="text-xs text-slate-400 -mt-1">
@@ -35,7 +35,7 @@ const Navbar = () => {
               href="#"
               className="text-slate-300 hover:text-orange-400 transition font-medium"
             >
-              Discover
+              About
             </a>
 
             <a
@@ -49,14 +49,14 @@ const Navbar = () => {
               href="#"
               className="text-slate-300 hover:text-orange-400 transition font-medium"
             >
-              Collections
+              Dashboard
             </a>
 
             <a
               href="#"
               className="text-slate-300 hover:text-orange-400 transition font-medium"
             >
-              Offers
+              Contact
             </a>
           </nav>
 

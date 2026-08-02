@@ -21,7 +21,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
 
             <h2 className="text-3xl font-black">
-              Savory<span className="text-orange-500">.</span>
+              TimelyTaste<span className="text-orange-500">.</span>
             </h2>
 
             <p className="mt-6 max-w-md text-slate-400 leading-8">
@@ -171,7 +171,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
 
           <p className="text-slate-500 text-sm">
-            © 2026 Savory. All rights reserved.
+            © 2026 TimelyTaste. All rights reserved.
           </p>
 
           {/* Social */}

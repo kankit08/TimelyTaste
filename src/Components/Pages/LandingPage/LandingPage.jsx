@@ -1,5 +1,5 @@
 import Categories from "./Categories"
-import Collections from "./Collections"
+// import Collections from "./Collections"
 import Hero from "./Hero"
 import RestaurantCard from "./RestaurantCard"
 import RestaurantGrid from "./RestaurantGrid"
@@ -11,7 +11,7 @@ const LandingPage = () => {
   return (
     <div>
         <Hero/>
-        <Collections/>
+        {/* <Collections/> */}
         <Categories/>
         <RestaurantCard/>
         <RestaurantGrid/>

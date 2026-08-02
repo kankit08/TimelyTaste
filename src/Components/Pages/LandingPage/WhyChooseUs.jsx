@@ -69,7 +69,7 @@ const WhyChooseUs = () => {
           text-orange-500
           "
           >
-            Why Savory
+            Why TimelyTaste
           </p>
 
 
