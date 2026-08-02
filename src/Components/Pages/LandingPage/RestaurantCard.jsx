@@ -1,7 +1,6 @@
 import { Heart, Clock3, MapPin, Star, ArrowRight } from "lucide-react";
 
 const RestaurantCard = ({ restaurant }) => {
-  console.log("Res", restaurant);
 
   const {
     resImage,

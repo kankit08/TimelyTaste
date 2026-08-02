@@ -55,7 +55,7 @@ const Footer = () => {
 
           {/* Company */}
 
-          <div flex flex-col items-center lg:items-start>
+          <div className="flex flex-col items-center lg:items-start" >
 
             <h3 className="font-bold text-lg">
               Company
@@ -93,7 +93,7 @@ const Footer = () => {
 
           {/* Support */}
 
-          <div flex flex-col items-center lg:items-start>
+          <div className="flex flex-col items-center lg:items-start">
 
             <h3 className="font-bold text-lg">
               Support
@@ -131,7 +131,7 @@ const Footer = () => {
 
           {/* Download */}
 
-          <div flex flex-col items-center lg:items-start>
+          <div className="flex flex-col items-center lg:items-start">
 
             <h3 className="font-bold text-lg">
               Get the App
