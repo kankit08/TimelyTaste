@@ -1,114 +1,38 @@
 import { ArrowRight } from "lucide-react";
-
-
-const CATEGORIES = [
-  {
-    name: "Italian",
-    places: "180+ Restaurants",
-    image:
-      "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500",
-  },
-
-  {
-    name: "Japanese",
-    places: "90+ Restaurants",
-    image:
-      "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=500",
-  },
-
-  {
-    name: "Indian",
-    places: "300+ Restaurants",
-    image:
-      "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=500",
-  },
-
-  {
-    name: "Desserts",
-    places: "120+ Restaurants",
-    image:
-      "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=500",
-  },
-
-  {
-    name: "Healthy",
-    places: "70+ Restaurants",
-    image:
-      "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500",
-  },
-
-  {
-    name: "Burgers",
-    places: "150+ Restaurants",
-    image:
-      "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500",
-  },
-];
-
+import { useRestaurant } from "../../../Utils/RestaurantContext";
 
 const Categories = () => {
+  const resData = useRestaurant();
 
   return (
-
     <section className="bg-orange-50/40 py-20">
-
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-
-
         {/* Header */}
 
         <div className="mb-10">
-
-
           <p className="text-sm font-semibold uppercase tracking-widest text-orange-500">
             Browse Food
           </p>
 
-
-          <h2 className="
-          mt-3
-          text-4xl
-          md:text-5xl
-          font-black
-          text-slate-900
-          ">
+          <h2
+            className="mt-3 text-4xl md:text-5xl font-black text-slate-900">
             Explore Categories
           </h2>
 
-
-          <p className="
-          mt-4
-          max-w-xl
-          text-slate-600
-          ">
-            Find your favourite cuisine from thousands
-            of restaurants around you.
+          <p
+            className="mt-4 max-w-xl text-slate-600">
+            Find your favourite cuisine from thousands of restaurants around
+            you.
           </p>
-
-
         </div>
-
-
 
         {/* Category Grid */}
 
-        <div className="
-        grid
-        grid-cols-2
-        md:grid-cols-3
-        lg:grid-cols-6
-        gap-6
-        ">
-
-
-          {
-            CATEGORIES.map((category,index)=>(
-
-
-              <div
-
-              key={index}
-
+        <div
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          {resData.slice(0,6).map((category) => (
+            <div
+              key={category.resId}
               className="
               group
               rounded-3xl
@@ -123,27 +47,20 @@ const Categories = () => {
               duration-300
               cursor-pointer
               "
+            >
+              {/* Image */}
 
-              >
-
-
-                {/* Image */}
-
-
-                <div className="
+              <div
+                className="
                 relative
                 overflow-hidden
                 rounded-2xl
                 h-36
                 "
-                >
-
-                  <img
-
-                  src={category.image}
-
-                  alt={category.name}
-
+              >
+                <img
+                  src={category.resImage}
+                  alt={category.resName}
                   className="
                   h-full
                   w-full
@@ -152,51 +69,45 @@ const Categories = () => {
                   duration-500
                   group-hover:scale-110
                   "
+                />
 
-                  />
-
-
-                  <div className="
+                <div
+                  className="
                   absolute
                   inset-0
                   bg-black/10
                   group-hover:bg-black/20
                   transition
-                  "/>
+                  "
+                />
+              </div>
 
+              {/* Content */}
 
-                </div>
-
-
-
-                {/* Content */}
-
-
-                <div className="mt-4">
-
-
-                  <h3 className="
+              <div className="mt-4">
+                <h3
+                  className="
                   text-lg
                   font-bold
                   text-slate-900
                   group-hover:text-orange-500
                   transition
-                  ">
-                    {category.name}
-                  </h3>
+                  "
+                >
+                  {category.resCuisines.join(",").split(",")[0].trim()}
+                </h3>
 
-
-                  <p className="
+                {/* <p
+                  className="
                   mt-1
                   text-sm
                   text-slate-500
-                  ">
-                    {category.places}
-                  </p>
+                  "
+                >
+                  {category.resLocation}
+                </p> */}
 
-
-
-                  <button
+                <button
                   className="
                   mt-4
                   flex
@@ -206,41 +117,23 @@ const Categories = () => {
                   font-semibold
                   text-orange-500
                   "
-                  >
-
-                    Explore
-
-                    <ArrowRight
+                >
+                  Explore
+                  <ArrowRight
                     size={15}
                     className="
                     transition
                     group-hover:translate-x-1
                     "
-                    />
-
-                  </button>
-
-
-                </div>
-
-
+                  />
+                </button>
               </div>
-
-
-            ))
-          }
-
-
+            </div>
+          ))}
         </div>
-
-
       </div>
-
-
     </section>
-
   );
 };
-
 
 export default Categories;
