@@ -14,17 +14,17 @@ const Footer = () => {
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
 
-        <div className="grid gap-14 lg:grid-cols-5">
+        <div className="grid gap-14 text-center lg:text-left lg:grid-cols-5">
 
           {/* Brand */}
 
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 flex flex-col items-center lg:items-start">
 
             <h2 className="text-3xl font-black">
               TimelyTaste<span className="text-orange-500">.</span>
             </h2>
 
-            <p className="mt-6 max-w-md text-slate-400 leading-8">
+            <p className="mt-6 max-w-md text-slate-400 leading-8 mx-auto lg:mx-0">
               Discover premium restaurants, chef-crafted meals,
               and lightning-fast delivery. Every order is made
               to delight your taste buds.
@@ -38,7 +38,7 @@ const Footer = () => {
                 Join our newsletter
               </h3>
 
-              <div className="mt-4 flex rounded-2xl bg-slate-900 border border-slate-700 overflow-hidden">
+              <div className="mt-4 flex flex-col sm:flex-row rounded-2xl bg-slate-900 border border-slate-700 overflow-hidden w-full max-w-md mx-auto lg:mx-0">
 
                 <input
                   type="email"
@@ -60,7 +60,7 @@ const Footer = () => {
 
           {/* Company */}
 
-          <div>
+          <div flex flex-col items-center lg:items-start>
 
             <h3 className="font-bold text-lg">
               Company
@@ -98,7 +98,7 @@ const Footer = () => {
 
           {/* Support */}
 
-          <div>
+          <div flex flex-col items-center lg:items-start>
 
             <h3 className="font-bold text-lg">
               Support
@@ -136,7 +136,7 @@ const Footer = () => {
 
           {/* Download */}
 
-          <div>
+          <div flex flex-col items-center lg:items-start>
 
             <h3 className="font-bold text-lg">
               Get the App
@@ -146,7 +146,7 @@ const Footer = () => {
               Download our app for a faster ordering experience.
             </p>
 
-            <div className="mt-6 space-y-4">
+            <div className="mt-6 space-y-4 w-full max-w-xs mx-auto lg:mx-0">
 
               <button className="w-full rounded-2xl bg-white text-slate-900 py-3 font-semibold hover:scale-105 transition">
                 ▶ Google Play
@@ -168,7 +168,7 @@ const Footer = () => {
 
       <div className="border-t border-slate-800">
 
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8 flex flex-col md:flex-row items-center justify-between text-center md:text-left gap-6">
 
           <p className="text-slate-500 text-sm">
             © 2026 TimelyTaste. All rights reserved.
