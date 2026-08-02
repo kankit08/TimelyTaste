@@ -1,10 +1,5 @@
-// import {
-//   Facebook,
-//   Instagram,
-//   Twitter,
-//   Linkedin,
-//   Send,
-// } from "lucide-react";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -176,37 +171,37 @@ const Footer = () => {
 
           {/* Social */}
 
-          {/* <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4">
 
             <a
               href="#"
               className="w-11 h-11 rounded-full bg-slate-900 flex items-center justify-center hover:bg-orange-500 transition"
             >
-              <Facebook size={18} />
+              <FaFacebook/>
             </a>
 
             <a
               href="#"
               className="w-11 h-11 rounded-full bg-slate-900 flex items-center justify-center hover:bg-orange-500 transition"
             >
-              <Instagram size={18} />
+              <FaInstagram />
             </a>
 
             <a
               href="#"
               className="w-11 h-11 rounded-full bg-slate-900 flex items-center justify-center hover:bg-orange-500 transition"
             >
-              <Twitter size={18} />
+              <FaXTwitter />
             </a>
 
             <a
               href="#"
               className="w-11 h-11 rounded-full bg-slate-900 flex items-center justify-center hover:bg-orange-500 transition"
             >
-              <Linkedin size={18} />
+              <FaLinkedin />
             </a>
 
-          </div> */}
+          </div>
 
         </div>
 
