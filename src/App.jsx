@@ -1,9 +1,16 @@
 import './App.css'
 
+import Footer from './Components/Pages/Footer'
+import LandingPage from './Components/Pages/LandingPage/LandingPage'
+import Navbar from './Components/Pages/Navbar'
+
+
 const App = () => {
   return (
     <div>
-      <h2 className='text-2xl font-bold text-blue-500'>Timely Taste</h2>
+      <Navbar/>
+      <LandingPage/>
+      <Footer/>
     </div>
   )
 }
