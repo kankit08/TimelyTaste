@@ -6,6 +6,7 @@ import {
   MapPin,
   ChevronDown,
 } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -19,9 +20,11 @@ const Navbar = () => {
             </div>
 
             <div>
-              <h2 className="text-2xl font-black tracking-tight text-white">
+              <NavLink to="/">
+                <h2 className="text-2xl font-black tracking-tight text-white">
                 TimelyTaste
               </h2>
+              </NavLink>
 
               <p className="text-xs text-slate-400 -mt-1">
                 Premium Food Delivery
@@ -31,33 +34,33 @@ const Navbar = () => {
 
           {/* Navigation */}
           <nav className="hidden lg:flex items-center gap-10">
-            <a
-              href="#"
+            <NavLink
+              to="/about"
               className="text-slate-300 hover:text-orange-400 transition font-medium"
             >
               About
-            </a>
+            </NavLink>
 
-            <a
-              href="#"
+            <NavLink
+              to="/restaurant"
               className="text-slate-300 hover:text-orange-400 transition font-medium"
             >
               Restaurants
-            </a>
+            </NavLink>
 
-            <a
-              href="#"
+            <NavLink
+             to="/dashboard"
               className="text-slate-300 hover:text-orange-400 transition font-medium"
             >
               Dashboard
-            </a>
+            </NavLink>
 
-            <a
-              href="#"
+            <NavLink
+             to="/contact"
               className="text-slate-300 hover:text-orange-400 transition font-medium"
             >
               Contact
-            </a>
+            </NavLink>
           </nav>
 
           {/* Right Side */}
@@ -66,9 +69,7 @@ const Navbar = () => {
             <button className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 transition">
               <MapPin className="w-4 h-4 text-orange-400" />
 
-              <span className="text-sm text-white">
-                Gurugram
-              </span>
+              <span className="text-sm text-white">Gurugram</span>
 
               <ChevronDown className="w-4 h-4 text-slate-400" />
             </button>
@@ -90,7 +91,6 @@ const Navbar = () => {
             {/* Login */}
             <button className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold shadow-lg hover:scale-105 transition">
               <User size={18} />
-
               Login
             </button>
           </div>

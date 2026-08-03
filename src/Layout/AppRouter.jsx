@@ -4,6 +4,9 @@ import LandingPage from "../Components/Pages/LandingPage/LandingPage"
 import NotFound from "../Components/Pages/NotFound"
 import About from "../Components/Pages/About"
 import Restaurant from "../Components/Pages/Restaurant"
+import Dashboard from "../Components/Pages/Dashboard"
+import Contact from "../Components/Pages/Contact"
+
 
 const AppRouter = createBrowserRouter ([
     {
@@ -24,10 +27,14 @@ const AppRouter = createBrowserRouter ([
                 path: "restaurant",
                 element: <Restaurant/>
             },
-            // {
-            //     path: "dashboard",
-            //     element: <Restaurant/>
-            // },
+            {
+                path: "dashboard",
+                element: <Dashboard/>
+            },
+            {
+                path: "contact",
+                element: <Contact/>
+            },
         ]
     }
 ])

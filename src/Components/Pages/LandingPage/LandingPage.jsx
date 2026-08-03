@@ -1,10 +1,10 @@
 import Categories from "./Categories"
 // import Collections from "./Collections"
 import Hero from "./Hero"
-import RestaurantGrid from "./RestaurantGrid"
 import WhyChooseUs from "./WhyChooseUs"
 import AppBanner from "./AppBanner"
 import Testimonials from "./Testimonials"
+import FeaturedRestaurants from "../FeaturedRestaurants"
 
 const LandingPage = () => {
   return (
@@ -12,7 +12,7 @@ const LandingPage = () => {
         <Hero/>
         {/* <Collections/> */}
         <Categories/>
-        <RestaurantGrid/>
+        <FeaturedRestaurants/>
         <WhyChooseUs/>
         <AppBanner/>
         <Testimonials/>

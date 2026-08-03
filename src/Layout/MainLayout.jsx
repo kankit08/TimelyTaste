@@ -8,7 +8,9 @@ const MainLayout = () => {
     <div>
         <ResAPIData>
             <Navbar />
-            <Outlet/>
+            <main>
+              <Outlet/>
+            </main>
             <Footer/>
         </ResAPIData>
     </div>
