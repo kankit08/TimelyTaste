@@ -1,19 +1,14 @@
+import { RouterProvider } from 'react-router-dom'
 import './App.css'
-import {ResAPIData} from "./Utils/RestaurantContext"
-import Footer from './Components/Pages/Footer'
-import LandingPage from './Components/Pages/LandingPage/LandingPage'
-import Navbar from './Components/Pages/Navbar'
+import AppRouter from './Layout/AppRouter'
+
 
 
 const App = () => {
   return (
-    <div>
-      <ResAPIData>
-      <Navbar/>
-      <LandingPage/>
-      <Footer/>
-      </ResAPIData>
-    </div>
+    <>
+      <RouterProvider router={AppRouter}/>
+    </>
   )
 }
 
