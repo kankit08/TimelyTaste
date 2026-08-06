@@ -1,8 +1,14 @@
+import { RouterProvider } from 'react-router-dom'
 import './App.css'
+import AppRouter from './Layout/AppRouter'
+
+
 
 const App = () => {
   return (
-    <div>Timely Taste</div>
+    <>
+      <RouterProvider router={AppRouter}/>
+    </>
   )
 }
 
